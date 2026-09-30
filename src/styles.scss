@@ -1,1 +1,48 @@
-/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+
+// Include the prebuilt theme styles
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f5f7fb;
+  color: #1e293b;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Global button & interactive touch-target standards
+button,
+a.mat-mdc-button-base,
+.mat-mdc-button-base {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+// Material dialog styling refinements
+.mat-mdc-dialog-container {
+  border-radius: 12px !important;
+}
+
+// Global responsive helpers
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
