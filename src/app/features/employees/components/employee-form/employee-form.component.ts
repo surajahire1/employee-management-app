@@ -227,8 +227,7 @@ export class EmployeeFormComponent implements OnInit, OnChanges {
   @Output() save = new EventEmitter<CreateEmployeeDto>();
   @Output() cancel = new EventEmitter<void>();
 
-  // Regex patterns per requirements:
-  // Name: letters and spaces only
+  // Validation patterns
   private readonly namePattern = /^[a-zA-Z\s]+$/;
   // Email: pattern-based, RFC-compliant format
   private readonly emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
