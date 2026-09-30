@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, OnInit, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Store } from '@ngrx/store';
-import { MatDialog, MatDialogModule } from '@angular/material/dialog';
+import { MatDialog } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
@@ -31,7 +31,6 @@ import { EmployeeFormDialogComponent, EmployeeFormDialogData } from '../../compo
   standalone: true,
   imports: [
     CommonModule,
-    MatDialogModule,
     MatButtonModule,
     MatIconModule,
     MatProgressBarModule,
